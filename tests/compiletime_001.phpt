@@ -9,7 +9,6 @@ $s = microtime(true);
 require_once __DIR__ . "/foo.php";
 
 $afterRequire = compiletime_get_current();
-var_dump((microtime(true) - $s) * 1000000, $afterRequire - $start);
 
 if ($start > $afterRequire) {
     echo "FAIL!";
